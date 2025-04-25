@@ -57,7 +57,7 @@ const Home = () => {
       />
 
       <main className="flex-1 p-6 max-w-screen-xl mx-auto">
-        <h2 className="text-2xl font-bold mb-6">Catálogo de Automóviles</h2>
+        <h2 className="text-2xl font-bold mb-6">Catálogo Automóviles</h2>
         <Grid autos={autosFiltrados} />
       </main>
     </div>
