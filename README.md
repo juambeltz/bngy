@@ -12,7 +12,7 @@ Bienvenido a **Catálogo de Autos bngy**, una aplicación web creada para la ges
 ## Visita la aplicación
 
 Puedes ver la versión en vivo de la aplicación en el siguiente enlace:  
-[Binaguy en vivo](https://bngy.vercel.app/)
+[bngy en vivo](https://bngy.vercel.app/)
 
 ## Instalación
 
