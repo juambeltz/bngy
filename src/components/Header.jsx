@@ -1,22 +1,30 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-const Header = () => {
+
+const Header = ({limpiarFiltros}) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleHomeClick = () => {
+    limpiarFiltros();  // Reseteamos los filtros al hacer clic en Home
+    navigate("/");  // Navegamos a la página principal
+  };
 
   return (
     <header className="bg-gradient-to-r from-blue-800 to-blue-900 text-white py-4 px-6">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="text-2xl font-bold">
-          <Link to="/" className="uppercase text-white no-underline hover:text-gray-300">
+          <Link to="/" onClick={handleHomeClick} className="uppercase text-white no-underline hover:text-gray-300">
             Binaguy
           </Link>
         </div>
 
         {/* Menu - Desktop */}
         <nav className="hidden md:flex space-x-6">
-          <Link to="/" className="text-white hover:text-gray-300">Catálogo de autos</Link>
+          <Link to="/" onClick={handleHomeClick} className="text-white hover:text-gray-300">Catálogo de autos</Link>
           <Link to="/nuevos" className="text-white hover:text-gray-300">0km</Link>
           <Link to="/quienes-somos" className="text-white hover:text-gray-300">Quiénes Somos</Link>
           <Link to="/contacto" className="text-white hover:text-gray-300">Contacto</Link>

@@ -19,6 +19,9 @@ const Home = () => {
       .catch((err) => console.error("Error:", err));
   }, []);
 
+  // recuerda que para que funcione esto deve abrir un cmd posicionarme en la carpeta binaguy
+  // y ejecutar C:\Users\juan.juambeltz\Desktop\binaguy>npx json-server --watch src/data/autos.json --port 5000
+
 
 
   const marcas = [...new Set(autos.map((auto) => auto.marca))];
@@ -54,7 +57,7 @@ const Home = () => {
       />
 
       <main className="flex-1 p-6 max-w-screen-xl mx-auto">
-        <h1 className="text-2xl font-bold mb-6">Catálogo de Automóviles</h1>
+        <h2 className="text-2xl font-bold mb-6">Catálogo de Automóviles</h2>
         <Grid autos={autosFiltrados} />
       </main>
     </div>

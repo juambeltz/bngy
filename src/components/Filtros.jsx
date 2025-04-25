@@ -16,6 +16,7 @@ const Filtros = ({
   setPrecioMin,
   setPrecioMax,
 }) => {
+  
   const limpiarFiltros = () => {
     setFiltroMarca("");
     setFiltroTipo("");
