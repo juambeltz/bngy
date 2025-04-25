@@ -18,7 +18,7 @@ const Header = ({limpiarFiltros}) => {
         {/* Logo */}
         <div className="text-2xl font-bold">
           <Link to="/" onClick={handleHomeClick} className="uppercase text-white no-underline hover:text-gray-300">
-            Binaguy
+            Bngy
           </Link>
         </div>
 
