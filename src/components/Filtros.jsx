@@ -105,6 +105,7 @@ const Filtros = ({
         >
           Limpiar filtros
         </button>
+
     </aside>
   );
 };
