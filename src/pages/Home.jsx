@@ -13,8 +13,7 @@ const Home = () => {
   const [precioMax, setPrecioMax] = useState("");
 
   useEffect(() => {
-    // fetch("http://localhost:5000/autos")
-    fetch('/api/autos')
+    fetch("http://localhost:5000/autos")
       .then((res) => res.json())
       .then((data) => {
           setAutos(data),
