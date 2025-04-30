@@ -16,7 +16,10 @@ const Home = () => {
     // fetch("http://localhost:5000/autos")
     fetch('/api/autos')
       .then((res) => res.json())
-      .then((data) => setAutos(data))
+      .then((data) => {
+          setAutos(data),
+          console.log('Datos cargados jj:', data); // <- Agregá esto para verificar
+      })
       .catch((err) => console.error("Error:", err));
   }, []);
 
